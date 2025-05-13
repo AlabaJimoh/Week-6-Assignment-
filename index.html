@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Event Assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Welcome to the JavaScript Playground!</h1>
+    <!-- Event Handling -->
+    <button id="myButton">Click Me</button>
+
+    <!-- Interactive Elements -->
+    <div id="imageGallery">
+        <img src="image1.jpg" alt="Image 1" class="galleryImage" data-index="0">
+        <img src="image2.jpg" alt="Image 2" class="galleryImage" data-index="1">
+        <img src="image3.jpg" alt="Image 3" class="galleryImage" data-index="2">
+    </div>
+    <button id="prevButton">Previous</button>
+    <button id="nextButton">Next</button>
+
+    <div id="tabContainer">
+        <button class="tabButton active" data-tab="tab1">Tab 1</button>
+        <button class="tabButton" data-tab="tab2">Tab 2</button>
+        <button class="tabButton" data-tab="tab3">Tab 3</button>
+        <div id="tab1" class="tabContent active">
+            <h2>Content for Tab 1</h2>
+            <p>This is the content for the first tab.</p>
+        </div>
+        <div id="tab2" class="tabContent">
+            <h2>Content for Tab 2</h2>
+            <p>This is the content for the second tab.</p>
+        </div>
+        <div id="tab3" class="tabContent">
+            <h2>Content for Tab 3</h2>
+            <p>This is the content for the third tab.</p>
+        </div>
+    </div>
+
+    <!-- Form Validation -->
+    <form id="myForm">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <span id="emailError" class="error"></span><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <span id="passwordError" class="error"></span><br>
+        <span id="passwordStrength"></span><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
